@@ -240,8 +240,8 @@
       .then(function (response) {
         $("#exampleModalCenter").modal("toggle");
         console.log(response);
-        $(".modal-body").html(response.photo);
-        $(".modal-body").text(response.name);
+        $(".modal-body").html(`${response.photo}<br>`);
+        $(".modal-body").append(response.name);
       });
   });
 </script>
